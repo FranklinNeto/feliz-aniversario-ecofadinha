@@ -35,7 +35,7 @@ body {
       rgba(255, 255, 255),
       rgba(255, 255, 255, 0.5)
     ),
-    url("./assets/beijo_lilas.jpeg");
+    url("./assets/img/beijo_lilas.jpeg");
 
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

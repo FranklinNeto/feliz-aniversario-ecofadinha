@@ -4,64 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feliz Aniversário</title>
-    <link rel="stylesheet" href="./styles.css" />
-   <!--  <link rel="stylesheet" href="./reset.css" /> -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!--  <link rel="stylesheet" href="./reset.css" /> -->
   </head>
   <body onclick="start()">
+    <audio id="bey" controls>
+      <source
+        src="./assets/audio/[HD]Beyonce-Happy Birthday-Live in London.mp3"
+        type="audio/mp3"
+      />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
     <div class="card">
-        <div class="back"></div>
-        <div class="front">
-          <div class="imgset">
-               <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
-             </div>
-        </div>
-        <div class="text-container">
-          <p id="head">Feliz aniversário, Mozi!</p>
-          <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
-          <p>Hope your day goes great!</p>
-          <p>🎉🎂🎁💞</p>
+      <div class="back"></div>
+      <div class="front">
+        <div class="imgset">
+          <img
+            width="100%"
+            src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
+          />
         </div>
       </div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+      <div class="text-container">
+        <p id="head">Feliz aniversário, meu amor!</p>
+        <p>Amo compartilhar minha vida contigo!</p>
+        <p>Te amo!</p>
+        <p>🎉🎂🎁💞</p>
+      </div>
+    </div>
+
     <!--  <div class="birthday-card">
       <h1>Feliz Aniversário!</h1>
       <p>Espero que seu dia seja cheio de alegria e momentos especiais.</p>
      
       <p>🎉🎂🎁</p>
     </div> -->
-    <script src = "scrollbar.js"></script>
-    <script src="confetti.js"></script>
+    <script src="./scripts/scrollbar.js"></script>
+    <script src="./scripts/confetti.js"></script>
     <!-- Confetti  JS-->
     <script>
+      // start
 
-        // start
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+      };
 
-        const start = () => {
-            setTimeout(function() {
-                confetti.start()
-            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-        };
+      //  Stop
 
-        //  Stop
+      const stop = () => {
+        setTimeout(function () {
+          confetti.stop();
+        }, 10000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+      };
 
-        const stop = () => {
-            setTimeout(function() {
-                confetti.stop()
-            }, 10000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
-        };
+      start();
+      stop();
 
-        start();
-        stop();
+      /*   const bey = document.getElementById("bey");
+      bey.play(); */
     </script>
   </body>
 </html>
