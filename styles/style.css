@@ -1,12 +1,9 @@
 /* Adaptado de https://codepen.io/noobplus/pen/MWYGzeY */
 
-
-
-
 body {
-    background: linear-gradient(to right, #030637, #3c0753, #720455, #910a67);
- 
- /*  background-image: linear-gradient(
+  background: linear-gradient(to right, #030637, #3c0753, #720455, #910a67);
+
+  /*  background-image: linear-gradient(
     to right top,
     #1f0537,
     #380c60,
@@ -35,14 +32,13 @@ body {
       rgba(255, 255, 255),
       rgba(255, 255, 255, 0.5)
     ),
-    url("./assets/img/beijo_lilas.jpeg");
+    url("../assets/img/beijo_lilas.jpeg");
 
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   background-color: #e6f0e6;
   animation: bounce 1s infinite alternate;
-
 }
 .card .text-container {
   width: 80%;
@@ -119,8 +115,8 @@ body {
 }
 
 .ocultar-scrollbar {
-    overflow: hidden;
-  }
+  overflow: hidden;
+}
 
 @keyframes bounce {
   0% {
