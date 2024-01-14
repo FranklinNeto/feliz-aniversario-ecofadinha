@@ -1,6 +1,9 @@
 /* Adaptado de https://codepen.io/noobplus/pen/MWYGzeY */
 
 body {
+  display: flex;
+  flex-direction: column;
+
   background: linear-gradient(to right, #030637, #3c0753, #720455, #910a67);
 
   /*  background-image: linear-gradient(
@@ -125,4 +128,20 @@ body {
   100% {
     transform: translateY(-10px);
   }
+}
+
+.meu-botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #55108c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover */
+.meu-botao:hover {
+  background-color: #3a076b;
 }
